@@ -57,19 +57,10 @@ int main(){
         cin >> a;
         v1.pb(a);
     }
+    sort(all(v1));
     f(i, 0, m){
         cin >> a;
-        v2.pb(a);
-    }
-    lli lp1 = 0, lp2 = 0;
-    while(lp1 < n and lp2 < m){
-        if(v2[lp2] < v1[lp1]){
-            lp1++;
-        } else {
-            v.pb(v1[lp1]);
-            lp1++;
-            lp2++;
-        }
+        
     }
     auto_displayln(v, x);
     return 0;
